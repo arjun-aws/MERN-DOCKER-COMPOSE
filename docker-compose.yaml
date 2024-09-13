@@ -22,7 +22,7 @@ services:
   mongodb:
     image: mongo:latest  
     ports:
-      - "27017:27017"  
+      - "27018:27017"  
     networks:
       - mern_network
     volumes:
@@ -35,4 +35,5 @@ networks:
 volumes:
   mongo-data:
     driver: local  # Persist MongoDB data locally
+
 
